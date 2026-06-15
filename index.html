@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevQuiz - A Missão</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header Semântico -->
+    <header>
+        <h1>🚀 DevQuiz: A Missão</h1>
+        <p>Mostre que você domina as tecnologias da Web!</p>
+    </header>
+
+    <!-- Conteúdo Principal da Aplicação -->
+    <main id="conteudo-principal">
+        
+        <!-- Tela Inicial: Captura do Nome -->
+        <section id="tela-inicial" class="card">
+            <h2>Bem-vindo à Missão!</h2>
+            <p>Antes de começar, digite seu nome de desenvolvedor(a):</p>
+            <input type="text" id="input-nome" placeholder="Seu nome aqui..." autocomplete="off">
+            <button id="btn-iniciar">Começar Missão 🎯</button>
+        </section>
+
+        <!-- Tela do Jogo: Perguntas e Alternativas -->
+        <section id="tela-quiz" class="card escondido">
+            <h2 id="titulo-pergunta">Pergunta aqui</h2>
+            <!-- Container onde o JavaScript vai gerar as alternativas -->
+            <div id="container-alternativas"></div>
+            <p id="feedback-texto"></p>
+            <button id="btn-proxima" class="escondido">Próxima Pergunta ➡️</button>
+        </section>
+
+        <!-- Tela de Resultado Final Customizada -->
+        <section id="tela-resultado" class="card escondido">
+            <h2 id="mensagem-final">Parabéns!</h2>
+            <div id="feedback-visual">
+                <p id="pontuacao-texto">Você acertou 0 de 0 perguntas.</p>
+            </div>
+            <button id="btn-reiniciar">Tentar Novamente 🔄</button>
+        </section>
+
+    </main>
+
+    <!-- Rodapé Semântico -->
+    <footer>
+        <p>Desenvolvido com 💜 por um Estudante de Tecnologia | 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
